@@ -52,9 +52,7 @@ export function Hero() {
         className="relative z-10 mx-auto max-w-4xl px-6 text-center"
         style={{ opacity, transform: `translateY(${offsetY * 0.15}px)` }}
       >
-        <p className="animate-fade-in-up mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary-foreground/70">
-          Bienvenido a casa
-        </p>
+
         <h1 className="animate-fade-in-up delay-200 mb-6  text-5xl font-bold leading-tight text-primary-foreground text-balance md:text-7xl lg:text-8xl">
           Comunidad Cristiana Paraná
         </h1>
@@ -63,7 +61,7 @@ export function Hero() {
           misterio entre los gentiles; que es Cristo en vosotros, la esperanza
           de gloria"
           <div className="mt-2 text-lg font-semibold text-primary-foreground/70">
-            <b>Colonses 1:27</b>
+            <b>Colosenses 1:27</b>
           </div>
         </p>
         <div className="animate-fade-in-up delay-600 flex flex-col items-center justify-center gap-4 sm:flex-row">

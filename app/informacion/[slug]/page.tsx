@@ -17,7 +17,14 @@ export default async function Page({
   }
 
   return (
-    <main className="min-h-screen bg-cream">
+    <main className="min-h-screen bg-cream p-4">
+      <Link
+        href="/#eventos"
+        className="inline-flex items-center gap-2 rounded-lg  bg-primary px-7 py-3.5 text-sm font-semibold text-white transition hover:opacity-90"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Volver a eventos
+      </Link>
       {/* HERO */}
       <section className="bg-primary/10 py-36">
         <div className="mx-auto max-w-3xl px-8 text-center">
@@ -51,15 +58,7 @@ export default async function Page({
             ))}
           </div>
 
-          <div className="mt-16 border-t border-border p-3">
-            <Link
-              href="/#eventos"
-              className="inline-flex items-center  rounded-lg bg-primary px-7 py-3.5 text-sm font-semibold text-white transition hover:opacity-90"
-            >
-              <ArrowLeft className="h-4 w-10 mr-2" />
-              Volver a eventos
-            </Link>
-          </div>
+          <div className="mt-16 border-t border-border p-3"></div>
         </div>
       </section>
     </main>

@@ -1,17 +1,32 @@
 "use client";
 
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
+
+const WHATSAPP_NUMBER = "543435095743";
 
 export function ContactSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [submitted, setSubmitted] = useState(false);
+  const [nombre, setNombre] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [mensaje, setMensaje] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const text = `¡Hola! Soy ${nombre} ${telefono ? `y mi teléfono es ${telefono}` : ""}.\n\n${mensaje}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setTimeout(() => {
+      setSubmitted(false);
+      setNombre("");
+      setTelefono("");
+      setMensaje("");
+    }, 3000);
   };
 
   return (
@@ -29,12 +44,12 @@ export function ContactSection() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-warm">
               Contacto
             </p>
-            <h2 className="mb-6  text-4xl font-bold text-foreground text-balance md:text-5xl">
+            <h2 className="mb-6 text-4xl font-bold text-foreground text-balance md:text-5xl">
               Estamos para vos
             </h2>
             <p className="mb-10 text-lg leading-relaxed text-muted-foreground text-pretty">
-              Tenes alguna pregunta, necesitas oracion o simplemente queres saber mas sobre nuestra comunidad?
-              No dudes en escribirnos.
+              Tenes alguna pregunta, necesitas oracion o simplemente queres
+              saber mas sobre nuestra comunidad? No dudes en escribirnos.
             </p>
 
             <div className="flex flex-col gap-6">
@@ -44,7 +59,9 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Direccion</p>
-                  <p className="text-sm text-muted-foreground">Calle Las camelias 2846, Paraná, Entre Rios</p>
+                  <p className="text-sm text-muted-foreground">
+                    Calle Las camelias 2846, Paraná, Entre Rios
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -53,12 +70,10 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Telefono</p>
-                  <p className="text-sm text-muted-foreground">+54 343 509-5743</p>
+                  <p className="text-sm text-muted-foreground">
+                    +54 343 509-5743
+                  </p>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
-                
-
               </div>
             </div>
           </div>
@@ -68,55 +83,62 @@ export function ContactSection() {
             style={{
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? "translateX(0)" : "translateX(60px)",
-              transition: "opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s",
+              transition:
+                "opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s",
             }}
           >
-            <form onSubmit={handleSubmit} className="rounded-2xl border border-border bg-card p-8 shadow-sm">
+            <form
+              onSubmit={handleSubmit}
+              className="rounded-2xl border border-border bg-card p-8 shadow-sm"
+            >
               <div className="mb-6 grid gap-6 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-foreground">
+                  <label
+                    htmlFor="name"
+                    className="mb-2 block text-sm font-medium text-foreground"
+                  >
                     Nombre
                   </label>
                   <input
                     id="name"
                     type="text"
                     required
+                    value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
                     className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
                     placeholder="Tu nombre"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-foreground">
-                    Email
+                  <label
+                    htmlFor="phone"
+                    className="mb-2 block text-sm font-medium text-foreground"
+                  >
+                    Telefono
                   </label>
                   <input
-                    id="email"
-                    type="email"
-                    required
+                    id="phone"
+                    type="tel"
+                    value={telefono}
+                    onChange={(e) => setTelefono(e.target.value)}
                     className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
-                    placeholder="tu@email.com"
+                    placeholder="Numero de telefono"
                   />
                 </div>
               </div>
               <div className="mb-6">
-                <label htmlFor="subject" className="mb-2 block text-sm font-medium text-foreground">
-                  Asunto
-                </label>
-                <input
-                  id="subject"
-                  type="text"
-                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
-                  placeholder="De que queres hablarnos?"
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="mb-2 block text-sm font-medium text-foreground">
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-sm font-medium text-foreground"
+                >
                   Mensaje
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   required
+                  value={mensaje}
+                  onChange={(e) => setMensaje(e.target.value)}
                   className="w-full resize-none rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
                   placeholder="Escribi tu mensaje..."
                 />
@@ -125,10 +147,17 @@ export function ContactSection() {
                 type="submit"
                 className="flex w-full items-center justify-center gap-2 rounded-lg bg-warm px-6 py-3.5 text-sm font-semibold text-warm-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
-                {submitted ? "Mensaje enviado!" : (
-                  <>{"Enviar mensaje"} <Send className="h-4 w-4" /></>
+                {submitted ? (
+                  "¡Abriendo WhatsApp!"
+                ) : (
+                  <>
+                    {"Enviar por WhatsApp"} <Send className="h-4 w-4" />
+                  </>
                 )}
               </button>
+              <p className="m-5 text-center text-xs text-muted-foreground">
+                Se abrirá WhatsApp con tu mensaje listo para enviar.
+              </p>
             </form>
           </div>
         </div>

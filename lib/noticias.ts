@@ -1,8 +1,16 @@
+
 export const noticias = [
   {
     slug: "retirojovenes",
     titulo: "Retiro de Jóvenes 2026",
     date: "14-15 de Marzo, 2026",
+    images: [
+      "/images/foto1campa.webp",
+      "/images/foto2campa.webp",
+      "/images/foto3campa.webp",
+      "/images/foto4campa.webp",
+    ],
+    link: "https://drive.google.com/drive/folders/1GvXac0Ts8MEPAG3weD_D09g-scAfviDm?hl=es_419",
     contenido: `Este año volvemos con el Retiro de Jóvenes 2026, un fin de semana pensado especialmente para vos. Dos días de desconexión del ruido cotidiano y reconexión con lo que realmente importa: tu fe, tu comunidad y tu relación con Dios.
 
 El retiro se realizará los días 14 y 15 de marzo en un espacio al aire libre, rodeados de naturaleza, donde podremos compartir momentos de adoración, palabra, juegos, fogón y mucho más. Habrá charlas inspiradoras, tiempos de reflexión personal y espacios para conectar con otros jóvenes que están en el mismo camino.

@@ -8,9 +8,9 @@ import Link from "next/link";
 const events = [
   {
     title: "Retiro de Jovenes",
-    date: "14-15 de Marzo, 2026",
+    date: "14-15 de Marzo, 2026 - FINALIZADO",
     desc: "Un fin de semana de conexion, aventura y encuentro con Dios para la juventud.",
-    image: "/images/jovenes.jpg",
+    image: "/images/foto4campa.webp",
     link: "/informacion/retirojovenes",
   },
   
@@ -30,11 +30,9 @@ export function EventsSection() {
             transition: "opacity 0.8s ease-out, transform 0.8s ease-out",
           }}
         >
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-warm">
-            Proximos eventos
-          </p>
+          
           <h2 className=" text-4xl font-bold text-foreground text-balance md:text-5xl">
-            Lo que se viene
+            Eventos
           </h2>
         </div>
 

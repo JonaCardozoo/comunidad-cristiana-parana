@@ -85,28 +85,7 @@ export function AboutSection() {
   </p>
 </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              {values.map((v, i) => (
-                <div
-                  key={v.title}
-                  style={{
-                    opacity: isVisible ? 1 : 0,
-                    transform: isVisible ? "translateY(0)" : "translateY(30px)",
-                    transition: `opacity 0.6s ease-out ${0.4 + i * 0.1}s, transform 0.6s ease-out ${0.4 + i * 0.1}s`,
-                  }}
-                >
-                  <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-warm/10">
-                    <v.icon className="h-5 w-5 text-warm" />
-                  </div>
-                  <h3 className="mb-1 text-sm font-bold text-foreground">
-                    {v.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {v.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
+            
           </div>
         </div>
       </div>

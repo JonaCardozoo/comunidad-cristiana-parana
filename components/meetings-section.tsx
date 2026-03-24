@@ -5,21 +5,27 @@ import { Clock, MapPin, Music, BookOpen, Users, Coffee } from "lucide-react";
 
 const meetings = [
   {
-    icon: BookOpen,
+    image: "/images/biblia.png",
     title: "Reunion General",
     day: "Domingos",
     time: "10:00 hs",
-    desc: "Adoracion, ensenanza biblica y comunion. Un espacio para toda la familia.",
+    desc: "Adoracion, enseñanza biblica y comunion. Un espacio para toda la familia.",
   },
 
   {
-    icon: Users,
+    image: "/images/amigos.png",
     title: "Jovenes",
-    day: "Viernes",
-    time: "19:30 hs",
-    desc: "Un espacio dinamico para la nueva generacion con musica, juegos y ensenanza.",
+    day: "Sabado",
+    time: "18:30 hs",
+    desc: "Alabanzas, predica y enseñanza. Un espacio dinamico para la nueva generacion.",
   },
-
+    {
+    image: "/images/ninos.png",
+    title: "Pre adolescentes",
+    day: "Sabado",
+    time: "18:30 hs",
+    desc: "Juegos, enseñanza y actividades. Un espacio divertido para los mas chicos.",
+  },
 ];
 
 export function MeetingsSection() {
@@ -66,7 +72,11 @@ hover:-translate-y-2 hover:shadow-2xl
               }}
             >
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-warm/10 transition-colors ">
-                <m.icon className="h-6 w-6 text-warm" />
+                <img
+                  src={m.image}
+                  alt={m.title}
+                  className="h-6 w-6 text-warm"
+                />
               </div>
               <h3 className="mb-1 text-lg font-bold text-foreground">
                 {m.title}

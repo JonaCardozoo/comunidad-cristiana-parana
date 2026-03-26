@@ -6,25 +6,25 @@ import { Clock, MapPin, Music, BookOpen, Users, Coffee } from "lucide-react";
 const meetings = [
   {
     image: "/images/biblia.png",
-    title: "Reunion General",
+    title: "Reunión General",
     day: "Domingos",
     time: "10:00 hs",
-    desc: "Adoracion, enseñanza biblica y comunion. Un espacio para toda la familia.",
+    desc: "Adoración, enseñanza bíblica y comunión. Un espacio para toda la familia.",
   },
 
   {
     image: "/images/amigos.png",
-    title: "Jovenes",
-    day: "Sabado",
+    title: "Jóvenes",
+    day: "Sábado",
     time: "18:30 hs",
-    desc: "Alabanzas, predica y enseñanza. Un espacio dinamico para la nueva generacion.",
+    desc: "Alabanzas, prédica y enseñanza. Un espacio dinámico para la nueva generación.",
   },
-    {
+  {
     image: "/images/ninos.png",
     title: "Pre adolescentes",
-    day: "Sabado",
-    time: "18:30 hs",
-    desc: "Juegos, enseñanza y actividades. Un espacio divertido para los mas chicos.",
+    day: "Sábado",
+    time: "16:30 hs",
+    desc: "Juegos, enseñanza y actividades. Un espacio divertido para los más chicos.",
   },
 ];
 
@@ -34,9 +34,9 @@ export function MeetingsSection() {
   return (
     <section
       id="reuniones"
-      className="relative overflow-hidden bg-background py-24 md:py-32"
+      className="relative overflow-hidden bg-background py-24"
     >
-      <div ref={ref} className="mx-auto max-w-7xl px-6">
+      <div ref={ref} className="mx-auto max-w-7xl px-8 sm:px-12">
         <div
           className="mb-16 text-center "
           style={{
@@ -49,7 +49,7 @@ export function MeetingsSection() {
             Reuniones
           </p>
           <h2 className="mb-4  text-4xl font-bold text-foreground text-balance md:text-5xl">
-            Encontra tu lugar
+            Encontrá tu lugar
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground text-pretty">
             Tenemos diferentes espacios durante la semana para que puedas
@@ -57,21 +57,22 @@ export function MeetingsSection() {
           </p>
         </div>
 
-        <div className="flex justify-center gap-6 md:gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 gap-6 ">
           {meetings.map((m, i) => (
             <div
               key={m.title}
               className={`
-group relative overflow-hidden rounded-2xl border border-border bg-card p-6
-transition-all duration-200 ease-in
-${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-hover:-translate-y-2 hover:shadow-2xl
-`}
+    group relative overflow-hidden rounded-2xl border border-border bg-card p-6
+    text-center
+    transition-all duration-200 ease-in
+    ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+    hover:-translate-y-2 hover:shadow-2xl
+  `}
               style={{
                 transitionDelay: `${0.1 + i * 0.15}s`,
               }}
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-warm/10 transition-colors ">
+              <div className="mb-5 mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-warm/10 transition-colors">
                 <img
                   src={m.image}
                   alt={m.title}
@@ -81,7 +82,7 @@ hover:-translate-y-2 hover:shadow-2xl
               <h3 className="mb-1 text-lg font-bold text-foreground">
                 {m.title}
               </h3>
-              <div className="mb-4 flex items-center gap-4 text-sm text-muted-foreground">
+              <div className="mb-4 flex items-center justify-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <Clock className="h-3.5 w-3.5" /> {m.day} {m.time}
                 </span>
@@ -106,10 +107,10 @@ hover:-translate-y-2 hover:shadow-2xl
           <MapPin className="h-8 w-8 shrink-0 text-warm" />
           <div>
             <p className="text-lg font-semibold text-primary-foreground">
-              Donde nos encontramos
+              Dónde nos encontramos
             </p>
             <p className="text-primary-foreground/70">
-              Calle las camelias 2846, Paraná, Entre Rios, Argentina
+              Calle Las Camelias 2846, Paraná, Entre Ríos, Argentina
             </p>
           </div>
           <a
@@ -118,7 +119,7 @@ hover:-translate-y-2 hover:shadow-2xl
             rel="noopener noreferrer"
             className="shrink-0 rounded-full bg-warm px-6 py-2.5 text-sm font-semibold text-warm-foreground transition-transform hover:scale-105 sm:ml-auto"
           >
-            Como llegar
+            Cómo llegar
           </a>
         </div>
       </div>

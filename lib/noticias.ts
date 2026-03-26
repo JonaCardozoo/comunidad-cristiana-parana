@@ -1,9 +1,8 @@
-
 export const noticias = [
   {
     slug: "retirojovenes",
     titulo: "Retiro de Jóvenes 2026",
-    date: "14-15 de Marzo, 2026",
+    date: "14-15 de marzo, 2026",
     images: [
       "/images/foto1campa.webp",
       "/images/foto2campa.webp",
@@ -24,19 +23,21 @@ El costo del retiro incluye alojamiento, todas las comidas y los materiales nece
 ¡Te esperamos para vivir juntos un fin de semana que no vas a olvidar!`,
   },
   {
-    slug: "venta-de-budines",
-    titulo: "Venta de Budines",
-    date: "Finalizado",
-    contenido: `Este febrero nos juntamos con un objetivo claro: recaudar fondos para el campamento Cristo en mí. Y la manera que elegimos para hacerlo es una que nos encanta, ¡vendiendo budines caseros!
+    slug: "convivencia2026",
+    titulo: "Convivencia 2026",
+    date: "10 de abril, 2026",
+    images: [
+      "/images/fotoconvivencia1.webp",
+      "/images/fotoconvivencia2.webp",
+      "/images/fotoconvivencia3.webp",
+    ],
+    link: "https://drive.google.com/drive/folders/1VxG7u0PaE-49czLc4anV-6gOe9Gd6WHy?hl=es_419",
+    contenido: `Te invitamos a vivir un hermoso tiempo de convivencia como iglesia, donde podremos encontrarnos, compartir y seguir creciendo juntos como comunidad.
 
-La venta se realizará el 20 de febrero y los budines son preparados con mucho amor por las familias de nuestra comunidad. Hay variedades para todos los gustos: clásico de vainilla, de chocolate, con frutas secas y más. Todos elaborados de forma casera, con ingredientes de calidad y el toque especial que solo lo hecho en casa tiene.
+Será una ocasión especial para fortalecer la unidad, disfrutar de la compañía y agradecer por cada persona que forma parte de este camino. Compartiremos una comida “a la canasta”, donde cada uno puede traer algo para sumar y así, entre todos, crear un momento sencillo pero significativo.
 
-El campamento Cristo en mí es una experiencia transformadora para los jóvenes de nuestra iglesia. Cada año, chicos y chicas regresan del campamento con una fe renovada, nuevas amistades y recuerdos que duran toda la vida. Es un espacio donde muchos han tenido encuentros genuinos con Dios, y queremos que eso siga siendo posible para los que vienen.
+Más que lo que llevamos, lo importante es el corazón con el que venimos: dispuesto a compartir, a escuchar y a disfrutar del tiempo juntos.
 
-Cada budin que comprás es un aporte directo a que un joven pueda vivir esa experiencia. No es solo comprar un postre rico, es ser parte de algo mucho más grande.
-
-Si querés reservar el tuyo con anticipación, podés hacerlo contactando a cualquier miembro de la iglesia o escribiéndonos por los medios habituales. La cantidad es limitada, ¡así que no te quedés sin el tuyo!
-
-Gracias por apoyar a nuestra comunidad. Juntos hacemos posible que estas experiencias sigan creciendo.`,
+¡Te esperamos para pasar un momento agradable en comunidad!`,
   },
 ];

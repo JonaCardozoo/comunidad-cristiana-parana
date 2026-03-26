@@ -48,8 +48,8 @@ export function ContactSection() {
               Estamos para vos
             </h2>
             <p className="mb-10 text-lg leading-relaxed text-muted-foreground text-pretty">
-              Tenes alguna pregunta, necesitas oracion o simplemente queres
-              saber mas sobre nuestra comunidad? No dudes en escribirnos.
+              ¿Tenés alguna pregunta, necesitás oración o simplemente querés
+              saber más sobre nuestra comunidad? No dudes en escribirnos.
             </p>
 
             <div className="flex flex-col gap-6">
@@ -58,9 +58,9 @@ export function ContactSection() {
                   <MapPin className="h-5 w-5 text-warm" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Direccion</p>
+                  <p className="font-semibold text-foreground">Dirección</p>
                   <p className="text-sm text-muted-foreground">
-                    Calle Las camelias 2846, Paraná, Entre Rios
+                    Calle Las Camelias 2846, Paraná, Entre Ríos
                   </p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export function ContactSection() {
                   <Phone className="h-5 w-5 text-warm" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Telefono</p>
+                  <p className="font-semibold text-foreground">Teléfono</p>
                   <p className="text-sm text-muted-foreground">
                     +54 343 509-5743
                   </p>
@@ -114,7 +114,7 @@ export function ContactSection() {
                     htmlFor="phone"
                     className="mb-2 block text-sm font-medium text-foreground"
                   >
-                    Telefono
+                    Teléfono
                   </label>
                   <input
                     id="phone"
@@ -122,7 +122,7 @@ export function ContactSection() {
                     value={telefono}
                     onChange={(e) => setTelefono(e.target.value)}
                     className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
-                    placeholder="Numero de telefono"
+                    placeholder="Número de teléfono"
                   />
                 </div>
               </div>
@@ -140,7 +140,7 @@ export function ContactSection() {
                   value={mensaje}
                   onChange={(e) => setMensaje(e.target.value)}
                   className="w-full resize-none rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-warm focus:ring-1 focus:ring-warm focus:outline-none"
-                  placeholder="Escribi tu mensaje..."
+                  placeholder="Escribí tu mensaje..."
                 />
               </div>
               <button

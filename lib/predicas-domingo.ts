@@ -29,7 +29,9 @@ export const predicacionesDomingo: PredicaDomingo[] = [
       "/images/reunion29marzo3.webp",
     ],
     contenido: `
-      Este domingo Claudio nos habló sobre 
-    `
+      Este domingo Claudio predicó la introducción de la carta de los hebreos centrandoce en el capitulo 1 versiculo 1 al 4.
+      Lo que se resaltó en la predica es que es estos postreros dias nos ha hablado por el hijo (Cristo) y la exaltación de su persona como hijo, siendo el sumo sacerdote perfecto, "Hebreos 4:14"
+      El sacrificio perfecto de Cristo, "Hebreos 9:12", y tenemos acceso a Dios, "Hebreos 10:19-20".
+    `,
   },
 ];

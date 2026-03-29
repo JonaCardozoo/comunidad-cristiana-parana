@@ -11,6 +11,21 @@ const meetings = [
     time: "10:00 hs",
     desc: "Adoración, enseñanza bíblica y comunión. Un espacio para toda la familia.",
   },
+  {
+    image: "/images/masninos.png",
+    title: "Escuelita dominical",
+    day: "Domingos",
+    time: "10:30 hs",
+    desc: "Enseñanza bíblica para los más chicos, se realiza durante la reunión general.",
+  },
+
+  {
+    image: "/images/ninos.png",
+    title: "Pre adolescentes",
+    day: "Sábado",
+    time: "16:30 hs",
+    desc: "Juegos, enseñanza y actividades. Un espacio divertido para los más chicos.",
+  },
 
   {
     image: "/images/amigos.png",
@@ -18,13 +33,6 @@ const meetings = [
     day: "Sábado",
     time: "18:30 hs",
     desc: "Alabanzas, prédica y enseñanza. Un espacio dinámico para la nueva generación.",
-  },
-  {
-    image: "/images/ninos.png",
-    title: "Pre adolescentes",
-    day: "Sábado",
-    time: "16:30 hs",
-    desc: "Juegos, enseñanza y actividades. Un espacio divertido para los más chicos.",
   },
 ];
 

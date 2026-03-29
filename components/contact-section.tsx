@@ -155,7 +155,7 @@ export function ContactSection() {
                   </>
                 )}
               </button>
-              <p className="m-5 text-center text-xs text-muted-foreground">
+              <p className="m-5 text-center text-xs text-muted-foreground p-2">
                 Se abrirá WhatsApp con tu mensaje listo para enviar.
               </p>
             </form>

@@ -1,7 +1,9 @@
 export function MarqueeBanner() {
   const items = [
     "Domingos 10:00 hs - Reunion General",
-    "Sabados 19:00 hs - Jovenes",
+    "Sábados 16:30 hs - Pre adolescentes",
+    "Sábados 18:30 hs - Jóvenes",
+
   ];
 
   const repeated = [...items, ...items, ...items, ...items];

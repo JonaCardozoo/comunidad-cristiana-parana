@@ -29,7 +29,7 @@ export const noticias = [
     slug: "oracion-adoracion",
     titulo: "Encuentro de Oración y Adoración",
     date: "3 de abril, 2026",
-    images: ["/images/fotopagina6.jpg"],
+    images: ["/images/fotopagina6.webp"],
     link: "",
     contenido: `Te invitamos a ser parte de un tiempo especial de oración y adoración como comunidad.
 
@@ -43,7 +43,7 @@ Vení con un corazón dispuesto, porque creemos que Dios siempre hace algo espec
     slug: "actividad-jovenes",
     titulo: "Actividad de Jóvenes",
     date: "4 de abril, 2026",
-    images: ["/images/fotoiglesia5.jpg"],
+    images: ["/images/fotoiglesia5.webp"],
     link: "",
     contenido: `Este sábado tenemos una actividad pensada especialmente para los jóvenes.
 
@@ -57,7 +57,7 @@ Si sos joven, no te lo podés perder. ¡Te esperamos para vivir una tarde difere
     slug: "domingo-resurreccion",
     titulo: "Domingo de Resurrección",
     date: "5 de abril, 2026",
-    images: ["/images/fotoiglesia4.jpg"],
+    images: ["/images/fotoiglesia4.webp"],
     link: "",
     contenido: `Este domingo celebramos juntos el Día de la Resurrección, un momento central para nuestra fe.
 
@@ -71,7 +71,7 @@ Te invitamos a venir con tu familia y amigos para compartir este día tan especi
     slug: "reunion-varones",
     titulo: "Reunión de Varones",
     date: "16 de abril, 2026",
-    images: ["/images/fotoiglesia1.jpg"],
+    images: ["/images/fotoiglesia1.webp"],
     link: "",
     contenido: `Invitamos a todos los hombres de la iglesia a ser parte de esta reunión especial.
 
@@ -85,9 +85,9 @@ Estos encuentros son una oportunidad para apoyarnos, animarnos y seguir avanzand
     slug: "convivencia-botanico",
     titulo: "Convivencia en el Botánico",
     date: "3 de mayo, 2026",
-    images: ["/images/fotoiglesia2.jpg"],
+    images: ["/images/fotoiglesia2.webp"],
     link: "",
-    contenido: `Te invitamos a disfrutar de una hermosa jornada de convivencia al aire libre en el Botánico.
+    contenido: `Te invitamos a disfrutar de una hermosa jornada de convivencia al aire libre en el parque Botánico.
 
 Será un tiempo para compartir en comunidad, relajarnos y disfrutar de la creación. Como en otras ocasiones, cada uno puede traer algo para compartir y así armamos entre todos un momento especial.
 

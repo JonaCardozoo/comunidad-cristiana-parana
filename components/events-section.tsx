@@ -21,7 +21,7 @@ const events = [
     date: "Viernes 3 de abril, 2026",
     status: "Próximamente",
     desc: "Un viernes de oración y adoración para toda la comunidad. Un espacio para buscar a Dios juntos.",
-    image: "/images/fotopagina6.jpg",
+    image: "/images/fotopagina6.webp",
     link: "/informacion/oracion-adoracion",
   },
   {
@@ -29,7 +29,7 @@ const events = [
     date: "Sábado 4 de abril, 2026",
     status: "Próximamente",
     desc: "Un sábado de actividades para jóvenes. Un espacio para crecer y conectarse.",
-    image: "/images/fotoiglesia5.jpg",
+    image: "/images/fotoiglesia5.webp",
     link: "/informacion/actividad-jovenes",
   },
   {
@@ -37,7 +37,7 @@ const events = [
     date: "Domingo 5 de abril, 2026",
     status: "Próximamente",
     desc: "Un domingo de resurrección y celebración. Un espacio para toda la familia.",
-    image: "/images/fotoiglesia4.jpg",
+    image: "/images/fotoiglesia4.webp",
     link: "/informacion/domingo-resurreccion",
   },
   {
@@ -45,7 +45,7 @@ const events = [
     date: "Jueves 16 de abril, 2026",
     status: "Próximamente",
     desc: "Un espacio para la reflexión y el crecimiento espiritual de los hombres de la iglesia.",
-    image: "/images/fotoiglesia1.jpg",
+    image: "/images/fotoiglesia1.webp",
     link: "/informacion/reunion-varones",
   },
   {
@@ -53,7 +53,7 @@ const events = [
     date: "Domingo 3 de mayo, 2026",
     status: "Próximamente",
     desc: "Un domingo distinto para celebrar la vida y el amor de Dios. Un espacio para conectarse y compartir.",
-    image: "/images/fotoiglesia2.jpg",
+    image: "/images/fotoiglesia2.webp",
     link: "/informacion/convivencia-botanico",
   },
 ];

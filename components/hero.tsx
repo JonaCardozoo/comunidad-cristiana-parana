@@ -34,7 +34,7 @@ export function Hero() {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="/videos/videoiglesia4.mp4" type="video/mp4" />
+          <source src="/videos/video-frente-iglesia.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

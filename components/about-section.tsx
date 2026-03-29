@@ -67,25 +67,25 @@ export function AboutSection() {
               Nuestra visión
             </h2>
             <div className="mb-10 text-lg leading-relaxed text-muted-foreground text-pretty space-y-6">
-  <p>
-    Que Cristo sea el centro absoluto de todo. No predicamos al hombre
-    ni sus esfuerzos, sino a Jesucristo y su obra consumada.
-  </p>
+              <p>
+                Que Cristo sea el centro absoluto de todo. No predicamos al
+                hombre ni sus esfuerzos, sino a Jesucristo y su obra consumada.
+              </p>
 
-  <p>
-    Creemos que en Él está la vida, la justicia y la plenitud del creyente.
-    Nuestra mirada no está puesta en la Ley, sino en la gracia; no en el desempeño,
-    sino en la cruz; no en la culpa, sino en la identidad que recibimos en Cristo.
-  </p>
+              <p>
+                Creemos que en Él está la vida, la justicia y la plenitud del
+                creyente. Nuestra mirada no está puesta en la Ley, sino en la
+                gracia; no en el desempeño, sino en la cruz; no en la culpa,
+                sino en la identidad que recibimos en Cristo.
+              </p>
 
-  <p>
-    Anunciamos su señorío, descansamos en su obra perfecta y vivimos desde
-    la realidad de que Cristo no solo está con nosotros, sino en nosotros.
-    Porque cuando Cristo es revelado, el corazón es transformado.
-  </p>
-</div>
-
-            
+              <p>
+                Anunciamos su señorío, descansamos en su obra perfecta y vivimos
+                desde la realidad de que Cristo no solo está con nosotros, sino
+                en nosotros. Porque cuando Cristo es revelado, el corazón es
+                transformado.
+              </p>
+            </div>
           </div>
         </div>
       </div>

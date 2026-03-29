@@ -49,9 +49,17 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-primary-foreground/50">
-              {`\u00A9 ${new Date().getFullYear()} Comunidad Cristiana Paraná. Todos los derechos reservados.`}
-            </p>
+            <div className="flex flex-col items-center gap-3 md:items-start">
+              <p className="text-sm text-primary-foreground/50">
+                {`\u00A9 ${new Date().getFullYear()} Comunidad Cristiana Paraná. Todos los derechos reservados.`}
+              </p>
+              <Link
+                href="/legal"
+                className="text-sm text-primary-foreground/70 underline-offset-4 transition-colors hover:text-primary-foreground hover:underline"
+              >
+                Política de Privacidad y Aviso Legal
+              </Link>
+            </div>
             <div className="flex items-center gap-4">
               {socialLinks.map((social) => (
                 <a

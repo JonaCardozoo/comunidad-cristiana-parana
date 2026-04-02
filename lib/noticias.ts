@@ -31,7 +31,7 @@ export const noticias = [
     date: "3 de abril, 2026",
     images: ["/images/fotopagina6.webp"],
     link: "",
-    contenido: `Te invitamos a ser parte de un tiempo especial de oración y adoración como comunidad.
+    contenido: `Te invitamos a ser parte de un tiempo especial de oración y adoración como comunidad a las 19hs en el salón.
 
 Será una noche para detenernos, dejar de lado la rutina y enfocar nuestro corazón en Dios. A través de la música, la oración y momentos de reflexión, buscamos generar un espacio donde cada persona pueda acercarse más a Él.
 

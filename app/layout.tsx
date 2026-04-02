@@ -8,8 +8,7 @@ const _playfair = Playfair_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Comunidad Cristiana Paraná - Bienvenido a Casa",
-  description:
-    "Somos una comunidad de fe en Paraná. Te invitamos a conocer a Dios, encontrar libertad, descubrir tu proposito y hacer la diferencia.",
+  description: "",
   icons: {
     icon: [
       {

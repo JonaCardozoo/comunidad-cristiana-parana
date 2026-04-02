@@ -21,7 +21,7 @@ export default function Home() {
       <PredicasDomingoSection />
       <EventsSection />
       {/* <TestimonialsSection /> */}
-      <CtaSection />
+        {/* <CtaSection /> */}
       <ContactSection />
       <Footer />
     </main>

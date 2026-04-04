@@ -17,7 +17,7 @@ const events = [
     link: "/informacion/retirojovenes",
   },
   {
-    title: "Encuentro de oración y adoración",
+    title: "Viernes de Crucifixión",
     date: "Viernes 3 de abril, 2026 · 19hs",
     isoDate: "2026-04-03",
     desc: "Un viernes de oración y adoración para toda la comunidad. Un espacio para buscar a Dios juntos.",

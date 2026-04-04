@@ -21,7 +21,7 @@ export const noticias = [
       "/images/fotoconvivencia2.webp",
       "/images/fotoconvivencia5.webp",
     ],
-    link: "https://drive.google.com/drive/folders/1VxG7u0PaE-49czLc4anV-6gOe9Gd6WHy?hl=es_419",
+    link: "",
     contenido: `Te invitamos a vivir un hermoso tiempo de convivencia...`,
   },
 
@@ -30,7 +30,7 @@ export const noticias = [
     titulo: "Encuentro de Oración y Adoración",
     date: "3 de abril, 2026",
     images: ["/images/fotopagina6.webp"],
-    link: "",
+    link: "https://drive.google.com/drive/folders/1VxG7u0PaE-49czLc4anV-6gOe9Gd6WHy?hl=es_419",
     contenido: `Te invitamos a ser parte de un tiempo especial de oración y adoración como comunidad a las 19hs en el salón.
 
 Será una noche para detenernos, dejar de lado la rutina y enfocar nuestro corazón en Dios. A través de la música, la oración y momentos de reflexión, buscamos generar un espacio donde cada persona pueda acercarse más a Él.

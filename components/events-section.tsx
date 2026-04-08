@@ -8,6 +8,23 @@ import { Badge } from "@/components/ui/badge";
 import { useRef } from "react";
 
 const events = [
+  
+  {
+    title: "Reunión de varones",
+    date: "Jueves 16 de abril, 2026",
+    isoDate: "2026-04-16",
+    desc: "Un espacio para la reflexión y el crecimiento espiritual de los hombres de la iglesia.",
+    image: "/images/fotoiglesia1.webp",
+    link: "/informacion/reunion-varones",
+  },
+  {
+    title: "Convivencia local Botánico",
+    date: "Domingo 3 de mayo, 2026",
+    isoDate: "2026-05-03",
+    desc: "Un domingo distinto para celebrar la vida y el amor de Dios. Un espacio para conectarse y compartir.",
+    image: "/images/fotoiglesia2.webp",
+    link: "/informacion/convivencia-botanico",
+  },
   {
     title: "Retiro de Jóvenes",
     date: "Sáb. y Dom. 14 y 15 de marzo, 2026",
@@ -39,22 +56,6 @@ const events = [
     desc: "Un domingo de resurrección y celebración. Un espacio para toda la familia.",
     image: "/images/fotoiglesia4.webp",
     link: "/informacion/domingo-resurreccion",
-  },
-  {
-    title: "Reunión de varones",
-    date: "Jueves 16 de abril, 2026",
-    isoDate: "2026-04-16",
-    desc: "Un espacio para la reflexión y el crecimiento espiritual de los hombres de la iglesia.",
-    image: "/images/fotoiglesia1.webp",
-    link: "/informacion/reunion-varones",
-  },
-  {
-    title: "Convivencia local Botánico",
-    date: "Domingo 3 de mayo, 2026",
-    isoDate: "2026-05-03",
-    desc: "Un domingo distinto para celebrar la vida y el amor de Dios. Un espacio para conectarse y compartir.",
-    image: "/images/fotoiglesia2.webp",
-    link: "/informacion/convivencia-botanico",
   },
 ];
 

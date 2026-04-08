@@ -1,5 +1,33 @@
 export const noticias = [
   {
+    slug: "reunion-varones",
+    titulo: "Reunión de Varones",
+    date: "16 de abril, 2026",
+    images: ["/images/fotoiglesia1.webp"],
+    link: "",
+    contenido: `Invitamos a todos los hombres de la iglesia a ser parte de esta reunión especial.
+
+Será un espacio para compartir, reflexionar y crecer juntos en nuestra vida espiritual. A través de charlas y momentos de intercambio, buscamos fortalecernos como hombres de fe.
+
+Estos encuentros son una oportunidad para apoyarnos, animarnos y seguir avanzando con propósito.
+
+¡Te esperamos para vivir un tiempo significativo!`,
+  },
+  {
+    slug: "convivencia-botanico",
+    titulo: "Convivencia en el Botánico",
+    date: "3 de mayo, 2026",
+    images: ["/images/fotoiglesia2.webp"],
+    link: "",
+    contenido: `Te invitamos a disfrutar de una hermosa jornada de convivencia al aire libre en el parque Botánico.
+
+Será un tiempo para compartir en comunidad, relajarnos y disfrutar de la creación. Como en otras ocasiones, cada uno puede traer algo para compartir y así armamos entre todos un momento especial.
+
+Más allá de lo que llevamos, lo importante es el tiempo juntos: charlar, reír, conocernos y fortalecer los vínculos.
+
+Vení con tu familia o amigos y sumate a este día diferente. ¡Te esperamos!`,
+  },
+  {
     slug: "retirojovenes",
     titulo: "Retiro de Jóvenes 2026",
     date: "14-15 de marzo, 2026",
@@ -58,7 +86,7 @@ Si sos joven, no te lo podés perder. ¡Te esperamos para vivir una tarde difere
     titulo: "Domingo de Resurrección",
     date: "5 de abril, 2026",
     images: ["/images/fotoiglesia4.webp"],
-    link: "",
+    link: "https://drive.google.com/drive/folders/1P9jr_fm4CablrqLq9lMME3GR8jXfbpwA?hl=es_419",
     contenido: `Este domingo celebramos juntos el Día de la Resurrección, un momento central para nuestra fe.
 
 Nos reunimos como iglesia para recordar el amor de Jesús y la esperanza que tenemos en Él. Será un tiempo de celebración, adoración y palabra, pensado para toda la familia.
@@ -66,33 +94,5 @@ Nos reunimos como iglesia para recordar el amor de Jesús y la esperanza que ten
 Te invitamos a venir con tu familia y amigos para compartir este día tan especial, donde recordamos que la vida siempre tiene la última palabra.
 
 ¡Te esperamos para celebrar juntos!`,
-  },
-  {
-    slug: "reunion-varones",
-    titulo: "Reunión de Varones",
-    date: "16 de abril, 2026",
-    images: ["/images/fotoiglesia1.webp"],
-    link: "",
-    contenido: `Invitamos a todos los hombres de la iglesia a ser parte de esta reunión especial.
-
-Será un espacio para compartir, reflexionar y crecer juntos en nuestra vida espiritual. A través de charlas y momentos de intercambio, buscamos fortalecernos como hombres de fe.
-
-Estos encuentros son una oportunidad para apoyarnos, animarnos y seguir avanzando con propósito.
-
-¡Te esperamos para vivir un tiempo significativo!`,
-  },
-  {
-    slug: "convivencia-botanico",
-    titulo: "Convivencia en el Botánico",
-    date: "3 de mayo, 2026",
-    images: ["/images/fotoiglesia2.webp"],
-    link: "",
-    contenido: `Te invitamos a disfrutar de una hermosa jornada de convivencia al aire libre en el parque Botánico.
-
-Será un tiempo para compartir en comunidad, relajarnos y disfrutar de la creación. Como en otras ocasiones, cada uno puede traer algo para compartir y así armamos entre todos un momento especial.
-
-Más allá de lo que llevamos, lo importante es el tiempo juntos: charlar, reír, conocernos y fortalecer los vínculos.
-
-Vení con tu familia o amigos y sumate a este día diferente. ¡Te esperamos!`,
   },
 ];

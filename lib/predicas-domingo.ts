@@ -144,4 +144,28 @@ Porque de el, por el y para el son todas las cosas.
 Romanos 11:36 
     `,
   },
+  {
+    id: "2026-04-11",
+    fecha: "Domingo 12 de abril, 2026",
+    titulo: "Génesis 2:9-17 — El hombre destituido sin Cristo",
+    predicador: "Claudio Cardozo",
+    versiculos: "Génesis 2:9-17, Mateo 7:22, 2 Timoteo 4:1, 1 Pedro 4:5",
+    imagenes: [
+      "/images/martinpagina.jpg",
+      "/images/orlandopagina.jpg",
+      "/images/santipagina.jpg",
+    ],
+    contenido: `
+      En este pasaje se presenta al hombre frente a dos realidades: el bien y el mal. Dios coloca delante de él la vida y la muerte, marcando un principio espiritual fundamental.
+
+Sin embargo, la justicia de Cristo no se basa simplemente en juzgar entre lo bueno y lo malo. Su juicio va más profundo: distingue entre lo que está vivo y lo que está muerto espiritualmente.
+
+Las Escrituras muestran que llegará un día en que todos serán juzgados (Mateo 7:22; 2 Timoteo 4:1; 1 Pedro 4:5). En ese momento, la pregunta clave no será solo lo que hicimos, sino si realmente fuimos conocidos por Dios.
+
+Por eso surge una verdad esencial:
+¿Somos conocidos por Dios?
+
+Nuestra vida espiritual no depende solo de conocer acerca de Él, sino de tener una relación real con su persona. En ese conocimiento verdadero está la vida.
+    `,
+  },
 ];

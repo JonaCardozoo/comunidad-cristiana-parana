@@ -15,7 +15,7 @@ export function PredicasDomingoSection() {
   return (
     <section
       id="predicas"
-      className="border-t border-foreground/10 bg-cream py-24 md:py-32"
+      className="border-t border-foreground/10 bg-[#cdcfc8] py-24 md:py-32"
       aria-labelledby="predicas-heading"
     >
       <div ref={ref} className="mx-auto max-w-6xl px-6">

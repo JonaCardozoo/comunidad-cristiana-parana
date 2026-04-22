@@ -168,4 +168,17 @@ Por eso surge una verdad esencial:
 Nuestra vida espiritual no depende solo de conocer acerca de Él, sino de tener una relación real con su persona. En ese conocimiento verdadero está la vida.
     `,
   },
+  {
+    id: "2026-04-11",
+    fecha: "Jueves 16 de abril, 2026",
+    titulo: "La familia",
+    predicador: "En comunión",
+    versiculos: "",
+    imagenes: [
+      "/images/reunionvarones.jpg",
+    ],
+    contenido: `
+      Durante este encuentro nos centramos en la familia, compartiendo diversos testimonios de vida sobre los hijos y el rol de la familia en la sociedad. Reafirmamos los valores cristianos establecidos, fortaleciendo así nuestros vínculos y el crecimiento mutuo en la relación con los demás.
+    `,
+  },
 ];

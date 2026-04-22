@@ -206,7 +206,6 @@ function PredicaImagenes({
 // ---------------------------------------------------------------------------
 
 export function PredicasList() {
-  const primeraId = predicacionesDomingo[0]?.id;
 
   if (predicacionesDomingo.length === 0) {
     return (
@@ -221,7 +220,6 @@ export function PredicasList() {
       <Accordion
         type="single"
         collapsible
-        defaultValue={primeraId}
         className="w-full px-2 sm:px-4"
       >
         {predicacionesDomingo.map((p) => (

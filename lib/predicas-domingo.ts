@@ -181,4 +181,85 @@ Nuestra vida espiritual no depende solo de conocer acerca de Él, sino de tener 
       Durante este encuentro nos centramos en la familia, compartiendo diversos testimonios de vida sobre los hijos y el rol de la familia en la sociedad. Reafirmamos los valores cristianos establecidos, fortaleciendo así nuestros vínculos y el crecimiento mutuo en la relación con los demás.
     `,
   },
+  {
+    id: "2026-04-26",
+    fecha: "Domingo 26 de abril, 2026",
+    titulo: "2 Corintios 10:1-18",
+    predicador: "Ariel Gómez",
+    versiculos: "2 Corintios 10:1-18",
+    imagenes: [
+      "/images/fotoiglesia2.webp",
+    ],
+    contenido: `
+      Contexto
+
+La autoridad de Pablo estaba siendo cuestionada (rebelión) con medidas humanas, y Pablo se defiende con la verdad (las armas espirituales).
+
+1. Humanizar la iglesia
+
+Querer humanizar la iglesia es impedir que Cristo sea conocido. Es volver a poner el velo.
+
+2. Armas de Dios
+
+Las armas poderosas de Dios son espirituales: la oración, la fe, la comunión, la verdad revelada libre de emociones y manipulación.
+
+Y la manifestación de Cristo (fruto) en nuestra vida: amor, gozo, paz, paciencia, etc.
+
+3. Armas del mundo
+
+Las armas del mundo son: las emociones, las medias verdades, las suposiciones, las presunciones, la murmuración.
+
+4. Derribar
+
+Derribar es limpiar, quitar obstáculos.
+
+El razonamiento humano es un obstáculo que se aferra como una fortaleza, la cual hay que destruir y quitar.
+
+5. Argumentos falsos
+
+Destruir argumentos falsos basados en experiencias propias (el yo) y no según Cristo.
+
+6. Obstáculos de arrogancia
+
+La arrogancia es no reconocer la autoridad o cuestionarla (exaltación del yo).
+
+7. Consecuencia
+
+Impide que la gente conozca a Dios porque se encuentra con el hombre, y este no puede salvar a nadie.
+
+La arrogancia, el orgullo, es rebeldía; es la antítesis del amor.
+
+Genera incertidumbre, expresa muerte espiritual.
+
+8. Pensamientos
+
+Capturar los pensamientos rebeldes mediante la palabra revelada.
+
+9. Obediencia
+
+Enseñar a obedecer a Cristo es permitir que esa vida se exprese, que encuentre el lugar para crecer (vivir en el espíritu).
+
+10. Autoridad
+
+La autoridad es para edificar.
+
+11. Arrogancia
+
+Los arrogantes quieren destacarse, buscan ser reconocidos, tenidos en cuenta.
+
+La arrogancia viene de la carne del viejo hombre. Es un principio de caída, es una altivez que destruye el cuerpo, que es la iglesia.
+
+12. Nueva vida
+
+La vida nueva (Cristo en nosotros) tiene otra naturaleza: le agrada ser obediente, se deleita, se goza.
+
+Es un placer estar en la cruz (negarme a mí mismo).
+
+Dice: el placer de estar en la cruz es mi paz.
+
+13. Enfoque correcto
+
+La autocomplacencia y el reconocimiento de los hombres no es importante. Lo más importante es que Dios reconozca a Cristo en mí.
+    `,
+  },
 ];

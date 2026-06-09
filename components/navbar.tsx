@@ -8,6 +8,8 @@ const navLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Nosotros", href: "#nosotros" },
   { label: "Reuniones", href: "#reuniones" },
+  { label: "Streaming", href: "#streaming" },
+  { label: "Prédicas", href: "#predicas" },
   { label: "Eventos", href: "#eventos" },
   { label: "Contacto", href: "#contacto" },
 ];

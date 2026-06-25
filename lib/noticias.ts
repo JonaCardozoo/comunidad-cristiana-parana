@@ -1,4 +1,30 @@
+
+
 export const noticias = [
+  {
+    slug: "reunion-jovenes",
+    titulo: "Reunión unida de Jóvenes",
+    date: "13 de junio, 2026",
+    images: ["/images/flyerjovenes.webp"],
+    link: "",
+    contenido: `Encuentro de Jóvenes en Paraná
+
+Este viernes 13 de junio te invitamos a compartir una noche especial donde Cristo será el centro de todo. Un tiempo para conocer más de Jesús, crecer en la fe y disfrutar de la comunión con otros jóvenes.
+
+Creemos que la verdadera transformación ocurre cuando ponemos nuestra mirada en Cristo y en su obra perfecta. Por eso, este encuentro busca animar a cada joven a descubrir la vida, la gracia y la identidad que se encuentran en Él.
+
+📅 13 de junio
+
+🕖 19:30 a 22:00 hs
+
+📍 Las Camelias 2846, Paraná
+
+🏛️ Comunidad Cristiana
+
+🥖 Cena a la canasta
+
+¡Te esperamos! 🙌`,
+  },
   {
     slug: "reunion-varones",
     titulo: "Reunión de Varones",

@@ -8,7 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { useRef } from "react";
 
 const events = [
-  
   {
     title: "Reunión de varones",
     date: "Jueves 16 de abril, 2026",

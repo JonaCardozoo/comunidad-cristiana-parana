@@ -18,16 +18,25 @@ type YtSearchItem = {
   };
 };
 
+type YtPlaylistItem = {
+  snippet?: {
+    title?: string;
+    resourceId?: { videoId?: string };
+    thumbnails?: { high?: { url?: string }; medium?: { url?: string } };
+    liveBroadcastContent?: "live" | "none" | "upcoming";
+  };
+};
+
 function env(key: string): string {
   return (process.env[key] ?? "").trim();
 }
 
-async function ytSearch(
+async function ytFetch<T>(
+  endpoint: string,
   params: Record<string, string>,
   apiKey: string
-): Promise<YtSearchItem[]> {
-  const url = new URL("https://www.googleapis.com/youtube/v3/search");
-  url.searchParams.set("part", "snippet");
+): Promise<T | null> {
+  const url = new URL(`https://www.googleapis.com/youtube/v3/${endpoint}`);
   url.searchParams.set("key", apiKey);
   for (const [k, v] of Object.entries(params)) {
     url.searchParams.set(k, v);
@@ -42,37 +51,102 @@ async function ytSearch(
       const body = await res.text();
       console.error("[YouTube API]", res.status, body.slice(0, 200));
     }
-    return [];
+    return null;
   }
 
-  const data = (await res.json()) as { items?: YtSearchItem[] };
-  return data.items ?? [];
+  return (await res.json()) as T;
 }
 
-function itemToStream(
-  item: YtSearchItem,
+async function ytSearch(
+  params: Record<string, string>,
+  apiKey: string
+): Promise<YtSearchItem[]> {
+  const data = await ytFetch<{ items?: YtSearchItem[] }>(
+    "search",
+    { part: "snippet", ...params },
+    apiKey
+  );
+  return data?.items ?? [];
+}
+
+async function getLatestUpload(
+  channelId: string,
+  apiKey: string
+): Promise<YtPlaylistItem | null> {
+  const channelData = await ytFetch<{
+    items?: Array<{
+      contentDetails?: { relatedPlaylists?: { uploads?: string } };
+    }>;
+  }>("channels", { part: "contentDetails", id: channelId }, apiKey);
+
+  const uploadsId =
+    channelData?.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+  if (!uploadsId) return null;
+
+  const playlistData = await ytFetch<{ items?: YtPlaylistItem[] }>(
+    "playlistItems",
+    { part: "snippet", playlistId: uploadsId, maxResults: "10" },
+    apiKey
+  );
+
+  const items = playlistData?.items ?? [];
+  return (
+    items.find((item) => item.snippet?.liveBroadcastContent !== "upcoming") ??
+    items[0] ??
+    null
+  );
+}
+
+function buildStreamData(
+  videoId: string,
+  title: string,
+  thumb: string | undefined,
   isLive: boolean,
   automated: boolean
-): StreamingData | null {
-  const videoId = item.id?.videoId;
-  if (!videoId) return null;
-
-  const title = item.snippet?.title ?? (isLive ? "En vivo ahora" : "Última transmisión");
-  const thumb =
-    item.snippet?.thumbnails?.high?.url ??
-    item.snippet?.thumbnails?.medium?.url ??
-    youtubeThumbnail(videoId);
-
+): StreamingData {
   return {
     isLive,
     videoId,
     title,
-    thumbnailUrl: thumb,
+    thumbnailUrl: thumb ?? youtubeThumbnail(videoId),
     watchUrl: youtubeWatchUrl(videoId),
     channelUrl: youtubeChannel.channelUrl,
     subscribeUrl: youtubeChannel.subscribeUrl,
     automated,
   };
+}
+
+function searchItemToStream(
+  item: YtSearchItem | undefined,
+  isLive: boolean
+): StreamingData | null {
+  if (!item) return null;
+
+  const videoId = item.id?.videoId;
+  if (!videoId) return null;
+
+  const title =
+    item.snippet?.title ?? (isLive ? "En vivo ahora" : "Última transmisión");
+  const thumb =
+    item.snippet?.thumbnails?.high?.url ??
+    item.snippet?.thumbnails?.medium?.url;
+
+  return buildStreamData(videoId, title, thumb, isLive, true);
+}
+
+function playlistItemToStream(item: YtPlaylistItem | null): StreamingData | null {
+  if (!item?.snippet) return null;
+
+  const videoId = item.snippet.resourceId?.videoId;
+  if (!videoId) return null;
+
+  const title = item.snippet.title ?? "Última transmisión";
+  const thumb =
+    item.snippet.thumbnails?.high?.url ??
+    item.snippet.thumbnails?.medium?.url;
+  const isLive = item.snippet.liveBroadcastContent === "live";
+
+  return buildStreamData(videoId, title, thumb, isLive, true);
 }
 
 function fallbackData(): StreamingData {
@@ -105,7 +179,6 @@ export async function getStreamingData(): Promise<StreamingData> {
   }
 
   try {
-    // Paso 1: ¿Hay algo en vivo ahora?
     const liveItems = await ytSearch(
       {
         channelId,
@@ -116,25 +189,11 @@ export async function getStreamingData(): Promise<StreamingData> {
       apiKey
     );
 
-    const live = itemToStream(liveItems[0], true, true);
+    const live = searchItemToStream(liveItems[0], true);
     if (live) return live;
 
-    // Paso 2: No hay live → último video del canal (el stream recién terminado queda acá)
-    const latestItems = await ytSearch(
-      {
-        channelId,
-        order: "date",
-        type: "video",
-        maxResults: "10",
-      },
-      apiKey
-    );
-
-    const latest = latestItems.find(
-      (item) => item.snippet?.liveBroadcastContent !== "upcoming"
-    );
-
-    const stream = itemToStream(latest ?? latestItems[0], false, true);
+    const latestItem = await getLatestUpload(channelId, apiKey);
+    const stream = playlistItemToStream(latestItem);
     if (stream) return stream;
   } catch (err) {
     if (process.env.NODE_ENV === "development") {
